@@ -2,7 +2,16 @@ version: '2'
 services:
   ledmatrix:
     build: ./ledmatrix
+    labels:
+      io.resin.features.kernel-modules: '1'
+      io.resin.features.firmware: '1'
   sensors:
     build: ./sensors
+    labels:
+      io.resin.features.kernel-modules: '1'
+      io.resin.features.firmware: '1'
   thumbstick:
     build: ./thumbstick
+    labels:
+      io.resin.features.kernel-modules: '1'
+      io.resin.features.firmware: '1'
