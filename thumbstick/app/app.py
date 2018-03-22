@@ -1,5 +1,4 @@
 from sense_hat import SenseHat, ACTION_PRESSED, ACTION_HELD, ACTION_RELEASED
-
 sense = SenseHat()
 
 def pushed_middle(event):
