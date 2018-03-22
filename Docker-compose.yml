@@ -1,0 +1,8 @@
+version: '2'
+services:
+  ledmatrix:
+    build: ./ledmatrix
+  sensors:
+    build: ./sensors
+  thumbstick:
+    build: ./thumbstick
