@@ -2,16 +2,10 @@ version: '2'
 services:
   ledmatrix:
     build: ./ledmatrix
-    labels:
-      io.resin.features.kernel-modules: '1'
-      io.resin.features.firmware: '1'
+    privileged: true
   sensors:
     build: ./sensors
-    labels:
-      io.resin.features.kernel-modules: '1'
-      io.resin.features.firmware: '1'
+    privileged: true
   thumbstick:
     build: ./thumbstick
-    labels:
-      io.resin.features.kernel-modules: '1'
-      io.resin.features.firmware: '1'
+    privileged: true
